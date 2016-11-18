@@ -1,0 +1,26 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+	font-family : Helvetica, Serif;
+	font-size : 50px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #401133;
+	text-shadow: 0 0 3px #EC0003;
+}
+th {
+	padding: 10px;
+	font-family: serif;
+	font-size: 15px;
+	text-decoration:underline;
+}
+td {
+	padding : 10px;
+}
+h2 {
+	text-align: center;
+	font-size: 24px;
+	text-transform: uppercase;
+}
