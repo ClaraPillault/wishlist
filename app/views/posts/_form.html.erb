@@ -1,0 +1,29 @@
+<%= form_for(@post) do |f| %>
+  <% if @post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+      <% @post.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name, "Nom du produit voulu" %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :price, "Prix maximal à y accorder"%><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :deadline, "Date limite à l'achat" %><br>
+    <%= f.date_select :deadline %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
