@@ -1,29 +1,40 @@
+<link href="https://fonts.googleapis.com/css?family=Parisienne|Roboto" rel="stylesheet">
 <h1>Votre "Wishlist"</h1>
-
+<br/>
+<br/>
 <table>
   <thead>
     <tr>
       <th>Nom du produit voulu</th>
       <th>Prix maximal à y accorder</th>
       <th>Date limite à l'achat</th>
+      <th> Photo de l'article ou de l'inspiration </th>
       <th colspan="3"></th>
     </tr>
   </thead>
-
   <tbody>
-    <% @posts.each do |post| %>
+    <% @post.each do |post| %>
       <tr>
         <td><%= post.name %></td>
+
         <td><%= post.price %></td>
+
         <td><%= post.deadline %></td>
-        <td><%= link_to 'Agrandir', post %></td>
-        <td><%= link_to 'Editer', edit_post_path(post) %></td>
-        <td><%= link_to 'Supprimer', post, method: :delete, data: { confirm: 'Êtes-vous sûr de votre choix ?' } %></td>
+
+        <td><%= image_tag post.picture(:med) %> </td>
+
+        <td class="liens"><%= link_to 'Agrandir', post %> </br></br>
+
+       <%= link_to 'Editer', edit_post_path(post) %></br></br>
+
+       <%= link_to 'Supprimer', post, method: :delete, data: { confirm: 'Êtes-vous sûr de votre choix ?' } %> </br></br></td>
+
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<br>
+</br></br>
 
-<%= link_to 'Ajouter un nouvel article', new_post_path %>
+<i><div class="ajout"><%= link_to 'Ajouter un nouvel article', new_post_path %> </i></div> </span>
+

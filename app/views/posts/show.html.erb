@@ -1,3 +1,4 @@
+<div class="page"><h1> Mon article </h1> </br>
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -14,6 +15,11 @@
   <strong>Date limite:</strong>
   <%= @post.deadline %>
 </p>
-
-<%= link_to 'Éditer', edit_post_path(@post) %> |
-<%= link_to 'Retour', posts_path %>
+<p class="pic">
+<strong> Photo </strong> <br/></br>
+<%=image_tag @post.picture.url(:large) %>
+</p> </br></br>
+<span><%= link_to 'Éditer', edit_post_path(@post) %> |
+<%= link_to 'Retour', posts_path %> </span>
+</div> </br></br>
+<p></p>

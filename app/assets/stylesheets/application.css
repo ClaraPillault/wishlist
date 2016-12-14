@@ -13,42 +13,74 @@
  *= require_tree .
  *= require_self
  */
+body {
+  background-image: url("https://newevolutiondesigns.com/images/freebies/white-wallpaper-9.jpg");
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
 
 h1 {
-	font-family : Helvetica, Serif;
-	font-size : 50px;
+	font-family : 'Parisienne',cursive;
+	font-size : 75px;
 	text-align: center;
-	text-transform: uppercase;
 	color: #401133;
-	text-shadow: 0 0 3px #EC0003;
+	text-shadow: 0 0 1px;
+  text-transform: none;
+  position:relative; 
+}
+table {
+  margin: 0 auto;
 }
 th {
-	padding: 10px;
-	font-family: serif;
-	font-size: 15px;
-	text-decoration:underline;
+	padding: 15px;
+	font-size: 14px;
+  text-transform: none;
+  text-decoration: none;
+  font-family: 'roboto',sans-serif;
+  position: relative;
+  background-color: #A70045;
+  color:#fff
 }
 td {
-	padding : 10px;
+	padding : 15px;
+  font-family:'roboto';
+  font-size: 16px;
+  position: relative;
+  text-align: center;
+  background-color: #FEFDFB;
+  font-weight: bold;
 }
 h2 {
-	text-align: center;
-	font-size: 24px;
-	text-transform: uppercase;
+	font-family : 'Parisienne',cursive;
+  font-size : 55px;
+  text-align: center;
+  color: #401133;
+  text-shadow: 0 0 1px;
+  text-transform: none;
 }
 
-body {
-  background-color: #fff;
+tbody {
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position:relative;
+  text-align: center;
+  margin-left:20px;
 }
 
-p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+ol, ul,{
+  font-family:serif;
   font-size: 13px;
   line-height: 18px;
+}
+
+.retour {
+  text-align: center;
+  color: #401133;
 }
 
 pre {
@@ -58,14 +90,37 @@ pre {
 }
 
 a {
-  color: #000;
-  &:visited {
-    color: #666;
+  text-decoration: none;
+  font-size:14px;
+  color: #45152B;
+}
+  
+a:hover {
+    color: #45152B;
+    background-color: #FFB4B4;
   }
-  &:hover {
-    color: #fff;
-    background-color: #000;
+  a:visited {
+    color:#45152B;
   }
+}
+.Add {
+  font-style: italic;
+}
+.ajout {
+  text-align: center;
+}
+.field {
+  color:#401133;
+  font-family: 'roboto',sans-serif;
+}
+.ag {
+  text-align: center;
+}
+
+p{
+  text-align: center;
+  background-color: #F1F1F1;
+  color: #401133;
 }
 
 div {
@@ -73,15 +128,25 @@ div {
     margin-bottom: 10px;
   }
 }
+form {
+  text-align: center;
+}
 
 #notice {
-  color: green;
+  color: #AB0046;
 }
 
 .field_with_errors {
   padding: 2px;
   background-color: red;
   display: table;
+}
+.page {
+  text-align: center;
+}
+span {
+  position: relative;
+  left: 3em;
 }
 
 #error_explanation {

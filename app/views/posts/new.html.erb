@@ -1,5 +1,7 @@
 <h2>Ajouter un nouvel article</h2>
 
 <%= render 'form' %>
-
-<%= link_to 'Retour', posts_path %>
+<%= form_for @post, url: posts_path, html: { multipart: true } do |form| %>
+<% end %></br></br>
+<div class="retour">
+<%= link_to 'Retour', posts_path %> </div>
