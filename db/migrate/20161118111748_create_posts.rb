@@ -4,7 +4,7 @@ class CreatePosts < ActiveRecord::Migration
       t.string :name
       t.string :price
       t.date :deadline
-      t.picture :picture(:med)
+      # t.picture :picture
 
       t.timestamps
     end
